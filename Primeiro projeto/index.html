@@ -4,45 +4,110 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Página principal</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		fieldset {
+			padding: 10px;
+			width: 50%;
+		}
+
+		input {
+			margin: 5px;
+		}
+	</style>
 </head>
 <body>
 	<article>
 
 	<main>
-		<table border="1" width="50%" style="border: 2px solid red;">
-			<caption>Título</caption>
-			<thead>
-				<tr>
-					<th>Produto</th>
-					<th>Preço</th>
-					<th>Código</th>
-					<th>Desconto</th>
-				</tr>
-			</thead>
-			<tbody style="text-align: center;">
-				<tr>
-					<td><a href="https://www.youtube.com/watch?v=0Ghrc9jFuSU" target="_blank"><img src="images/maxresdefault.jpg" height="50px"></a></td>
-					<td>R$ 5.000.000.000.000,00</td>
-					<td>1234</td>
-					<td>ZERO</td>
-				</tr>
-				<tr>
-					<td><a href="https://www.webmotors.com.br/comprar/ferrari/testarossa/49-v12-gasolina-2p-manual/2-portas/1987/43493296?pos=x43493296c:&np=1" target="_blank"><img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2022/202209/20220902/ferrari-testarossa-4.9-v12-gasolina-2p-manual-wmimagem00580344220.jpg?s=fill&w=1920&h=1440&q=75" height="50px"></a></td>
-					<td>R$ 2.500.000,00</td>
-					<td>4321</td>
-					<td>ZERO, POBRE!</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<th colspan="3" rowspan="2">Total:</th>
-					<th>R$ 5.000.000.000.000,00</th>
-				</tr>
-				<tr>
-					<th>R$ 2.500.000,00</th>
-				</tr>
-			</tfoot>
-		</table>
+		<h2>Login</h2>
+		<form method="post" action="process.php">
+			<fieldset>
+				<div id="iptlogin">
+					<label for="ilemail">Email:</label>
+					<input type="email" name="lemail" id="ilemail" required>
+				</div>
+				<div id="iptlpswd">
+					<label for="ilpswd">Senha:</label>
+					<input type="password" name="lpswd" id="ilpswd" minlength="8" maxlength="32" required>
+				</div>
+				<div id="iptlsub">
+					<input type="submit" value="Logar" name="lsbmt" id="ilsbmt">
+				</div>
+			</fieldset>
+		</form>
+
+		<h2>Cadastre-se</h2>
+		<form method="post" action="process.php">
+			<fieldset>
+				<div id="username">
+					<label for="irusern">Nome de usuário:</label>
+					<input type="text" name="rusern" id="irusern">
+				</div>
+				<div id="iptremail">
+					<label for="iremail">Email:</label>
+					<input type="email" name="remail" id="iremail">
+				</div>
+				<div id="iptrpswd">
+					<label id="irpswd">Senha:</label>
+					<input type="password" name="rpswd" id="irpswd"><br>
+					<label id="ircpswd">Confirme a senha:</label>
+					<input type="password" name="rcpswd" id="ircpswd">
+				</div>
+				<div id="iptage">
+					<label for="iage">Data de nascimento:</label>
+					<input type="date" name="age" id="iage">
+				</div>
+				<div id="iptperson">
+					<input type="radio" name="person" id="ijuridic" value="juridic">
+					<label for="ijuridic">Pessoa Jurídica</label>
+					<input type="radio" name="person" id="ifisic" value="fisic">
+					<label for="ifisic">Pessoa Física</label>
+				</div>
+				<div id="ipttel">
+					<label for="itel">Telefone:</label>
+					<input type="tel" name="tel" id="itel" minlength="11" maxlength="13">
+				</div>
+				<div id="iptstate">
+					<label for="istateslct">Estado:</label>
+					<select id="istateslct" name="stateslct">
+						<optgroup label="Sudeste">
+							<option value="MG">Minas Gerais</option>
+						</optgroup>
+						<optgroup label="Nordeste">
+							<option value="PB">Paraíba</option>
+						</optgroup>
+						<optgroup label="Norte">
+							<option value="AM">Amazonas</option>
+						</optgroup>
+						<optgroup label="Centro-Oeste">
+							<option value="GO">Goiás</option>
+						</optgroup>
+						<optgroup label="Sul">
+							<option value="PR">Paraná</option>
+						</optgroup>
+						
+					</select>
+				</div>
+			</fieldset>
+			<div id="iptpromoemail">
+				<label>Você quer receber e-mails promocionais ?</label>
+				<input type="checkbox" name="promotionemails" id="ipromotionemails" checked>
+			</div>
+			<div id="iptrsubreset">
+				<input type="submit" name="rsbmt" value="Cadastrar" id="irsbmt">
+				<input type="reset" name="clean" id="iclean" value="Limpar">
+			</div>
+			<div id="ipttxta">
+				<label for="itxta">Observações</label><br>
+				<textarea id="itxta" cols="70" rows="30" maxlength="100" placeholder="observações..."></textarea>
+			</div>
+			
+		</form>
 	</main>
 
 	</article>
