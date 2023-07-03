@@ -67,6 +67,35 @@
 			text-align: justify;
 		}
 
+		div#email {
+			margin: 20px 0;
+		}
+
+		div#assunto {
+			display: flex;
+			justify-content: left;
+			margin: 20px 0;
+		}
+
+		div#assunto label {
+			margin-right: 5px;
+		}
+
+		div#descricao {
+			display: flex;
+			justify-content: left;
+			margin: 20px 0;
+		}
+
+		div#descricao label {
+			margin-right: 5px;
+		}
+
+		div#enviar input {
+			width: 350px;
+		}
+
+
 		footer {
 			padding: 30px;
 			font-size: 0.8em;
@@ -82,9 +111,9 @@
 		<img src="images/logo.png" id="logo">
 		<nav>
 			<ul id="navbar">
-				<li> <a href="">Home</a> </li>
-				<li> <a href="">Quem somos</a> </li>
-				<li> <a href="">Contato</a> </li>
+				<li> <a href="index.html">Home</a> </li>
+				<li> <a href="quemsomos.html">Quem somos</a> </li>
+				<li> <a href="#">Contato</a> </li>
 			</ul>
 		</nav>
 	</header>
@@ -93,6 +122,24 @@
 		<p>
 			Fusce sodales in urna a congue. Sed eu erat sit amet mi lacinia lacinia egestas condimentum orci.
 		</p>
+		<hr>
+		<div id="entreemcontato">
+			<div id="email">
+				<label for="">Seu e-mail: </label>
+				<input type="email" name="email">
+			</div>
+			<div id="assunto">
+				<label for="assunto">Assunto: </label>
+				<textarea cols="30" rows="5"></textarea>
+			</div>
+			<div id="descricao">
+				<label for="descricao">Descrição: </label>
+				<textarea cols="30" rows="5"></textarea>
+			</div>
+			<div id="enviar">
+				<input type="submit" name="enviar" value="Enviar">	
+			</div>
+		</div>
 	</main>
 	<footer>
 		<p>Todos os direitos reservados.</p>
