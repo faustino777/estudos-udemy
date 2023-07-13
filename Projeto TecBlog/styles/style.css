@@ -1,2 +1,145 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
+:root {
+    --cor1: #5E582A;
+    --cor2: #61580E;
+    --cor3: #AB9A18;
+    --cor4: #DEC81F;
+    --cor5: #E3D564;
+    --fontepadrao: Verdana;
+    --fonteimportada: 'Share Tech', sans-serif;
+}
+
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgb(248, 248, 248);
+    position: relative;
+}
+/* Cabeçalho da página */
+header {
+    background-color: var(--cor4);
+}
+
+header h1 {
+    padding: 40px;
+    font-family: var(--fonteimportada);
+    font-size: 3em;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+header span.marcado {
+    color: white;
+    text-transform: uppercase;
+}
+
+header nav {
+    background-color: var(--cor3);
+    width: 100vw;   
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding: 10px 5px;
+    margin: 0 15px;
+    text-transform: uppercase;
+
+}
+
+header nav ul li a {
+    padding: 5px 10px;
+    font-family: var(--fonteimportada);
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    box-shadow: inset 0px 0px 7px #61570e46;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+
+main {
+    display: inline-block;
+    background-color: white;
+    width: 800px;
+    margin: 30px 25% 0px 5%;
+}
+
+main h1 {
+    font-family: var(--fonteimportada);
+    padding: 20px 20px 0px 20px;
+}
+
+main p {
+    padding: 0px 20px 20px 20px;
+}
+
+aside {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(248, 248, 248);
+    margin: 30px 0;
+}
+
+aside div#caixas {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+} 
+
+aside div#caixas h1 {
+    font-family: var(--fonteimportada);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+aside div#caixas p {
+    font-size: 0.9em;
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+
+aside div#caixas a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--cor4);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+aside div#caixas hr {
+    margin: 10px 0;
+}
+
+aside div#caixas ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+aside div#caixas ul li {
+    margin: 5px 0;
+}
