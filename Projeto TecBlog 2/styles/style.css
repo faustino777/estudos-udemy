@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+:root {
+    --cor1: #5E582A;
+    --cor2: #61580E;
+    --cor3: #AB9A18;
+    --cor4: #DEC81F;
+    --cor5: #E3D564;
+    --fontepadrao: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fonteimportada: 'Share Tech', sans-serif;
+}
+
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    overflow-x:hidden;
+}
+
+body {
+    font-size: 1em;
+    font-family: var(--fontepadrao);
+    background-color: lightgray;
+}
+
+/* Layout */
+
+header#area-cabecalho {
+    background-color: var(--cor4);
+    padding: 15px;
+    text-align: center;
+}
+
+div#area-logo, nav#area-menu {
+    padding: 10px;
+}
+
+main#area-principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+main div#area-postagens {
+    float: left;
+    width: 660px;
+    background-color: white;
+
+}
+
+main div#area-lateral {
+    float: right;
+    width: 240px;
+    background-color: white;
+}
+
+div.post {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+
+}
+
+div.conteudo-lateral {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div.postagem-lateral {
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor4);
+    border-radius: 5px 5px 0px 0px;
+}
+
+/*Formatações de menu  */
+nav#area-menu a:link, nav#area-menu a:visited, nav#area-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-family: var(--fonteimportada);
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+nav#area-menu a:hover {
+    box-shadow: inset 0px 0px 7px #61570e46;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* Formatações gerais */
+header h1 {
+    font-family: var(--fonteimportada);
+    font-size: 3em;
+}
+
+main h2 {
+    font-family: var(--fonteimportada);
+    text-transform: uppercase;
+}
+
+div.conteudo-lateral h3 {
+    font-family: var(--fonteimportada);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: var(--cor5);
+    padding: 5px;
+}
+
+header .grifado {
+    color: white;
+}
+
+main .data-post {
+    display: block;
+    color: var(--cor4);
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+main a.post-link {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    font-family: var(--fonteimportada);
+    text-transform: uppercase;
+}
+
+main a.post-link:hover {
+    color: var(--cor4);
+}
+
+a.side-link {
+    display: block;
+    margin: 5px 0;
+    color: var(--cor4);
+}
+
+ul.side-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+a.sidelinks-categories {
+    display: block;
+    margin: 5px;
+    color: var(--cor4);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fonteimportada);
+}
+
+footer p {
+    font-family: var(--fonteimportada);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+}
