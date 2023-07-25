@@ -9,6 +9,12 @@
 			font-family: "Trebuchet MS", Helvetica, sans-serif;
 		}
 
+		div#table-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
 		table {
 			width: 50vw;
 			border: 2px solid black;
@@ -19,54 +25,74 @@
 			text-transform: uppercase;
 			font-weight: bolder;
 			font-size: 1.5em;
+			margin: 10px;
+		}
+
+		tr:hover {
+			background: #c3e6e5;
 		}
 
 		th {
-			text-align: left;
+			background-color: white;
+			width: 16.6vw;
+			text-align: center;
 			font-variant: small-caps;
 			font-size: 1.2em;
 			padding: 5px;
 		}
 
 		td {
+			width: 16.6vw;
 			text-align: left;
 			border: 1px solid black;
 			text-indent: 4px;
 		}
+
+		td.table-num {
+			text-align: right;
+			padding-right: 4px;
+		}
+
+		
+
+
 	</style>
 </head>
 <body>
-	<table>
-		<caption>Estilizando tabelas</caption>
-		<thead>
-			<tr>
-				<th>Código</th>
-				<th>Produto</th>
-				<th>Preço</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>001</td>
-				<td>Notebook</td>
-				<td>R$ 2.500</td>
-			</tr>
-			<tr>
-				<td>002</td>
-				<td>Tablet</td>
-				<td>R$ 1.500</td>
-			</tr>
-			<tr>
-				<td>003</td>
-				<td>IPhone</td>
-				<td>R$ 3.500</td>
-			</tr>
-			<tr>
-				<td>004</td>
-				<td>Nexus</td>
-				<td>R$ 3.500</td>
-			</tr>
-		</tbody>
-	</table>
+	<div id="table-container">
+		<table>
+			<caption>Estilizando tabelas</caption>
+			<thead>
+				<tr>
+					<th>Código</th>
+					<th>Produto</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>001</td>
+					<td>Notebook</td>
+					<td class="table-num">R$ 2.500</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>Tablet</td>
+					<td class="table-num">R$ 1.500</td>
+				</tr>
+				<tr>
+					<td>003</td>
+					<td>IPhone</td>
+					<td class="table-num">R$ 3.500</td>
+				</tr>
+				<tr>
+					<td>004</td>
+					<td>Nexus</td>
+					<td class="table-num">R$ 3.500</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
 </body>
 </html>
