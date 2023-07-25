@@ -5,29 +5,99 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Formulários</title>
 	<style>
-		
+		* {
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		div#form-container {
+			width: 300px;
+		}
+
+		fieldset {
+			border: 1px solid #ccc;
+			padding: 0px 2px 10px 0px;
+			background: #f8f8f8;
+		}
+
+		legend {
+			font-size: 1.5em;
+			font-weight: bolder;
+			text-transform: uppercase;
+		}
+
+		div.input-div {
+			display: flex;
+			margin: 10px 5px;
+			width: 250px;
+			flex-direction: column;
+    		align-items: stretch;
+		}
+
+		label {
+			font-size: 0.9em;
+			cursor: pointer;
+		}
+
+		input {
+			margin-top: 10px;
+			border: none;
+			border-bottom: 1px solid #ccc;
+		}
+
+		input:focus {
+			outline: none;
+			border-bottom: 1px solid black;
+		}
+
+		textarea {
+			width: 278px;
+			border: none;
+			resize: none;
+		}
+
+		div.radio-inputs label {
+			display: block;
+			margin: 0 10px;
+			font-size: 1em;
+			font-variant: small-caps;
+		}
+
 	</style>
 </head>
 <body>
 	<div id="form-container">
-		<h1>Estilizando formulários</h1>
+		<h2>Estilizando formulários</h1>
 		<form>
 			<fieldset id="contact-details">
 				<legend>Detalhes de contato</legend>
-				<div class="form-name">
-					<label for="input-name">Nome:</label>
+				<div class="input-div">
 					<input type="text" id="input-name">
+					<label for="input-name">Nome:</label>
 				</div>
-				<div class="form-email">
-					<label for="input-email">E-mail:</label>
+				<div class="input-div">
 					<input type="email" id="input-email">
+					<label for="input-email">E-mail:</label>
 				</div>
-				<div class="form-url">
+				<div class="input-div">
 					<label for="input-url">URL:</label>
 					<input type="url" id="input-url">
 				</div>
-				
-
+			</fieldset>
+			<fieldset>
+				<legend>Comentários</legend>
+				<div class="input-div">
+					<label for="text-area">Mensagem:</label>
+					<textarea id="text-area" rows="10"></textarea>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+				<div class="radio-inputs">
+					<label for="input-radioS">Sim<input type="radio" name="radiobtn" id="input-radioS"></label>
+					
+					<label for="input-radioN">Não<input type="radio" name="radiobtn" id="input-radioN"></label>
+					
+				</div>
 			</fieldset>
 		</form>
 	</div>
