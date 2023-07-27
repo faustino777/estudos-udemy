@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+:root{
+    --fontepadrao:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--fontepadrao);
+    background: #ffffff url('../images/fundo.png') repeat-x;
+}
+
+/* Layout cabeçalho */
+header {
+    margin: 0 auto;
+    width: 65%;
+    height: 200px;
+    background: url('../images/detalhe-topo.png') no-repeat top right;
+    background-size: 150px;
+}
+
+header div#logo-header {
+    width: 40%;
+    margin: 30px 0 10px 0;
+}
+
+/* Elementos do cabeçalho */
+
+div#logo-header img {
+    margin: 10px 10px;
+    width: 200px;
+}
+
+
+
