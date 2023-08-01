@@ -28,13 +28,11 @@ ul {
 
 /* Layout cabeçalho */
 header {
-    border: 1px solid red;
     margin: 0 auto;
     padding-top: 25px;
     width: 750px;
     height: 150px;
     background: url('../images/detalhe-topo.png') no-repeat top right;
-    background-size: 150px;
 }
 
 header .page-logo {
@@ -46,29 +44,37 @@ header .page-logo {
 
 /* Navbar */
 
-header div#navbar {
-    width: 1050px;
-}
-
 div#navbar ul {
-    display: flex;
+    margin-top: 30px;
     width: 90%;
-    background-color: rgb(189, 1, 1);
+    background-color: #b10333;
     border-radius: 4px;
+    float: left;
 }
 
 div#navbar li.navbar-item {
-    margin: 0 15px;
-    padding: 15px;
+    float: left;
 }
 
 li.navbar-item a {
-    font-weight: bolder;
-    font-size: 1.1em;
-    color: rgb(230, 230, 230);
+    display: block;
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+    line-height: 2.1em;
     text-decoration: none;
-    text-transform: uppercase;
+    color: rgb(255, 255, 255);  
+    background: url('../images/divisor.png') no-repeat right center;
 }
 
+li.navbar-item a:hover {
+    color: #69001d;
+}
+ 
+#navbar a#selected {
+    color: #ffffff;
+    background: none;
+    background-color: #de003e;
+    cursor: default;
+}
 
 
