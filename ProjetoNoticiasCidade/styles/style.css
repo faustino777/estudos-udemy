@@ -77,4 +77,45 @@ li.navbar-item a:hover {
     cursor: default;
 }
 
+/* Conteúdo da Main */
 
+main {
+    background: rgb(179, 179, 179);
+    margin: 60px auto 0 auto;
+    width: 750px;
+}
+
+main #main-content {
+    float: left;
+    margin: 0 0 20px 195px;
+    width: 270px;
+    background-color: rgb(109, 109, 240);
+}
+
+main #secondary-content {
+    float: left;
+    margin: 0 0 20px 15px;
+    width: 270px;
+    background-color: rgb(143, 255, 143);
+}
+
+main #side-content {
+    float: left;
+    margin: 0 0 20px -750px;
+    width: 180px;
+    background-color: rgb(255, 255, 130);
+}
+
+/* Rodapé */
+footer {
+    clear: both;
+    background: #294c71;
+    padding: 20px;
+}
+
+#footer-content {
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
