@@ -22,16 +22,20 @@ body {
 
 /* Layout cabeçalho */
 header {
+    border: 1px solid red;
     margin: 0 auto;
-    width: 65%;
-    height: 200px;
+    padding-top: 25px;
+    width: 750px;
+    height: 150px;
     background: url('../images/detalhe-topo.png') no-repeat top right;
     background-size: 150px;
 }
 
-header div#logo-header {
-    width: 35%;
-    margin: 10px 0 5px 0;
+header .page-logo {
+    width: 152px;
+    height: 66px;
+    background: url('../images/logo.png') no-repeat center;
+    text-indent: -3000px;
 }
 
 header div#navbar {
