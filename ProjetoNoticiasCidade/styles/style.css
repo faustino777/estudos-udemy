@@ -20,6 +20,12 @@ body {
     background: #ffffff url('../images/fundo.png') repeat-x;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* Layout cabeçalho */
 header {
     border: 1px solid red;
@@ -38,6 +44,8 @@ header .page-logo {
     text-indent: -3000px;
 }
 
+/* Navbar */
+
 header div#navbar {
     width: 1050px;
 }
@@ -45,16 +53,8 @@ header div#navbar {
 div#navbar ul {
     display: flex;
     width: 90%;
-    list-style: none;
     background-color: rgb(189, 1, 1);
     border-radius: 4px;
-}
-
-/* Elementos do cabeçalho */
-
-div#logo-header img {
-    margin: 10px 10px;
-    width: 170px;
 }
 
 div#navbar li.navbar-item {
