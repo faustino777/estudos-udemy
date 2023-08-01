@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -29,15 +30,40 @@ header {
 }
 
 header div#logo-header {
-    width: 40%;
-    margin: 30px 0 10px 0;
+    width: 35%;
+    margin: 10px 0 5px 0;
+}
+
+header div#navbar {
+    width: 1050px;
+}
+
+div#navbar ul {
+    display: flex;
+    width: 90%;
+    list-style: none;
+    background-color: rgb(189, 1, 1);
+    border-radius: 4px;
 }
 
 /* Elementos do cabeçalho */
 
 div#logo-header img {
     margin: 10px 10px;
-    width: 200px;
+    width: 170px;
+}
+
+div#navbar li.navbar-item {
+    margin: 0 15px;
+    padding: 15px;
+}
+
+li.navbar-item a {
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 
