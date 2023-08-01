@@ -81,7 +81,7 @@ li.navbar-item a:hover {
 
 main {
     background: rgb(179, 179, 179);
-    margin: 60px auto 0 auto;
+    margin: 80px auto 0 auto;
     width: 750px;
 }
 
@@ -89,21 +89,47 @@ main #main-content {
     float: left;
     margin: 0 0 20px 195px;
     width: 270px;
-    background-color: rgb(109, 109, 240);
+}
+
+#two-columns main #main-content {
+    width: 555px;
+}
+
+#one-column main #main-content {
+    margin: 0 0 20px 0px;
+    width: 750px;
 }
 
 main #secondary-content {
     float: left;
     margin: 0 0 20px 15px;
     width: 270px;
-    background-color: rgb(143, 255, 143);
 }
 
 main #side-content {
     float: left;
     margin: 0 0 20px -750px;
     width: 180px;
-    background-color: rgb(255, 255, 130);
+}
+
+/* Molde dos conteúdos */
+.box-form {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url('../images/fundo-caixa.png');
+}
+
+.box-form h2 {
+    padding: 3px 0 3px 8px;
+    font-size: 1.1em;
+    background: #294c71;
+    color: #ffffff;
+}
+
+.box-form-content {
+    background: #ffffff;
+    padding: 3px;
+    margin-top: 5px;
 }
 
 /* Rodapé */
