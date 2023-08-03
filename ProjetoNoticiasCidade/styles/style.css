@@ -132,6 +132,11 @@ main #side-content {
     margin-top: 5px;
 }
 
+.box-form-content a {
+    color: #294c71;
+    text-decoration: none;
+}
+ 
 /* Formatando ibagens do box-form */
 .box-form img {
     border: 2px solid #b10333;
