@@ -132,6 +132,23 @@ main #side-content {
     margin-top: 5px;
 }
 
+/* Formatando ibagens do box-form */
+.box-form img {
+    border: 2px solid #b10333;
+}
+
+/* Formatando cabeçalhos */
+.box-form h3 {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding: 6px;
+    color: white;
+    background-color: #b10333;
+    border-radius: 3px;
+}
+
 /* Menus Laterais */
 #side-content ul a {
     display: block;
@@ -168,6 +185,40 @@ input#email-side {
     background: #ffffff;
     border: 1px solid rgb(165, 165, 165);
 }
+
+/* Formatando lista de notícias */
+#notice-list li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+}
+
+#notice-list li a img {
+    float: left;
+    margin: 5px;
+
+}
+
+#notice-list li a {
+    text-decoration: none;
+}
+
+#notice-list li a h4 {
+    color: #294c71;
+    font-size: 0.8em;
+}
+
+#notice-list p {
+    font-size: 0.7em;
+    color: black;
+}
+
+#notice-list li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+
 
 /* Rodapé */
 footer {
