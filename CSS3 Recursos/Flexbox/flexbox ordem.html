@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #conteudo {
+            display: flex;
+            background: #dcdcdc;
+            height: 600px;
+            
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background: white;
+            border: 1px solid black;
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .order3 {
+            order: 3;
+        }
+
+        .order4 {
+            order: 4;
+        }
+
+        .order {
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item order3">01</div>
+        <div class="item order2">02</div>
+        <div class="item order1">03</div>
+        <div class="item order4">04</div>
+    </div>
+</body>
+</html>
