@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*if (!(4 == 4)) {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso')
+        }*/
+        
+        var maxfaltas = 15
+        var media = 7
+        var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite o numero de faltas :')
+
+        if (nota >= media && faltas <= maxfaltas) {
+            document.write('O aluno foi aprovado.')
+        } else {
+            document.write('O aluno foi reprovado.')
+        }
+
+        //operador ternário
+        var resultado = (nota >= media && faltas <= maxfaltas) ? 'Aprovado' : 'Reprovado'
+
+        document.write('<br>' + resultado)
+    </script>
+</body>
+</html>
