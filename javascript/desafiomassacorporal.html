@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt('Qual o seu nome ?')
+        var height = parseFloat(prompt('Qual a sua altura ? (em centímetros)')) 
+        var weight = parseFloat(prompt('Qual o seu peso ? (em kg)'))
+
+        height /= 100
+        mass = weight / (height*height)
+
+        if (mass < 16) {
+            var classification = 'Peso baixo (muito grave)'
+        } else if (mass > 16 && mass <= 16.99) {
+            var classification = 'Peso baixo (grave)'
+        } else if (mass > 17 && mass <= 18.49) {
+            var classification = 'Peso baixo'
+        } else if (mass > 18.50 && mass <= 24.99) {
+            var classification = 'Peso normal'
+        } else if ( mass > 25 && mass <= 29.99) {
+            var classification = 'Sobrepeso'
+        } else if (mass > 30 && mass <= 34.99) {
+            var classification = 'Obesidade (grau I)'
+        } else if (mass > 35 && mass <= 39.99) {
+            var classification = 'Obesidade (grau II)'
+        } else {
+            var classification = 'Obesidade (grau III)'
+        }
+
+        document.write(name + ' possui índice de massa corporal igual a ' + mass + ', sendo classificado como:' + classification)
+    </script>
+</body>
+</html>
