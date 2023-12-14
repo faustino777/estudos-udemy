@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = parseFloat(prompt('Digite o primeiro número:')) 
+        var n2 = parseFloat(prompt('Digite o segundo número:')) 
+        var tipoOperacao = prompt('Soma ou subtração ?')
+
+            function fazerCalculo (n1,n2,tipoOperacao) {
+                if (tipoOperacao == 'soma' || tipoOperacao == 'Soma' ) {
+                    document.write('O resultado é: ' + (n1+n2))
+                } else if (tipoOperacao == 'subtração' || tipoOperacao == 'Subtração') {
+                    document.write('O resultado é: ' + (n1-n2))
+                }
+            } fazerCalculo(n1,n2,tipoOperacao)
+    </script>
+</body>
+</html>
