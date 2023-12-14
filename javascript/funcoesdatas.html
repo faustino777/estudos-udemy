@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = new Date()
+        /*
+        document.write(data.getDate() + '/' + (data.getMonth()+1) + '/' + data.getFullYear())
+
+        //adicionar e remover dias
+        document.write(data.toString())
+        data.setDate(data.getDate()+1)
+        document.write('<br>')
+        document.write(data.toString())
+
+        document.write('<br><br><br><br><hr>')
+
+
+        //adicionar e remover meses
+
+        document.write(data.toString())
+        data.setMonth(data.getMonth()-2)
+        document.write('<br>')
+        document.write(data.toString())
+
+        document.write('<br><br><br><br><hr>')
+
+
+        //adicionar e remover anus
+
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear()-20)
+        document.write('<br>')
+        document.write(data.toString())
+        */
+        
+        //07/07/2003
+        var data1 = new Date(2003, 6, 7)
+
+        //14/12/2023
+        var data2 = new Date(2023, 11, 14)
+
+        document.write(data1.toDateString())
+        document.write('<br>')
+        document.write(data2.toDateString())
+        document.write('<br><br><br><br>')
+
+        //convertendo as datas para algo que possamos calcular
+        document.write(data1.getTime())
+        document.write('<br>')
+        document.write(data2.getTime())
+
+        document.write('<br><br><br><br>')
+
+        // encontrar a quantidade de milissegundos entre data1 e data2
+        var msdatas = Math.abs(data1.getTime() - data2.getTime())
+        document.write(msdatas)
+
+        document.write('<br><br><br><br>')
+
+        // 1 dia te 24h, cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milisegundos.
+        var msdia = (1*24*60*60*1000)
+        document.write('1 dia tem: ' + msdia + ' milissegundos')
+
+        document.write('<br><br><br><br>')
+
+        // dias de diferença entre data1 e data2
+        document.write('Diferença de ' + Math.ceil(msdatas/msdia) + ' dias, entre date1 e date2.')
+
+        document.write('<br>')
+        
+        document.write('Diferença de ' + Math.floor((msdatas/msdia)/365.5) + ' anos, entre date1 e date2.')
+
+
+
+
+
+    </script>
+</body>
+</html>

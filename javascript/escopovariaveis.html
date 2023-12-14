@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // escopo global,função e bloco
+
+        //global
+        var serie = 'Friends'
+
+
+        //bloco
+        if (true) {
+            var serie2 = 'Game of Thrones'
+            document.write(serie)
+        } document.write(serie2)
+
+        document.write('<br>')
+
+        // função
+        function x() {
+            var serie3 = 'The Walking Dead'
+            document.write(serie)
+            document.write(serie2)
+        }
+        x()
+        document.write(serie3)
+
+    </script>
+</body>
+</html>
