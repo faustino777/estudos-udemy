@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeyup="logicaCaractere()" type="text" name="ipt1" id="input1" placeholder="Digite um caractere aqui">
+    <br><br>
+    <span>Letras</span>
+    <input type="text" name="ipt2" id="input2" disabled>
+    <br><br>
+    <span>Números</span>
+    <input type="text" name="ipt3" id="input3" disabled>
+
+    <script>
+        function logicaCaractere() {
+            //selecionar o valor que contém o elemento, com o .value
+            var caractere = document.getElementById('input1').value
+
+            //limpar o que está escrito no input
+            document.getElementById('input1').value = ''
+
+            // limpar espaços em branco nas extremidades da string
+            caractere.trim()
+
+            switch (caractere) {
+                //adicionar o caractere no campo de números
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                case '10': document.getElementById('input3').value += caractere
+                    break
+                
+                //adicionar o caractere no campo de letras
+                default: document.getElementById('input2').value += caractere
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Manipulando estilos</h3>
+
+    <button onclick="modificandoEstilo('#FF0000', '200px', '200px')" style="width: 100px; height: 50px;">Vermelho</button>
+    <button onclick="modificandoEstilo('#00FF00', '300px', '300px')" style="width: 100px; height: 50px;">Verde</button>
+    <button onclick="modificandoEstilo('#0000FF', '400px', '400px')" style="width: 100px; height: 50px;">Azul</button>
+    <hr>
+    <div id="box" style="width: 150px; height: 150px; border: 1px solid black;">
+
+    </div>
+
+    <script>
+        function modificandoEstilo(corDeFundo, h, w) {
+            document.getElementById('box').style.background = corDeFundo
+            document.getElementById('box').style.height = h
+            document.getElementById('box').style.width = w
+        }
+
+    </script>
+</body>
+</html>
