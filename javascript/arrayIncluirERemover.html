@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var listaCoisas = Array()
+        listaCoisas['frutas'] = Array()
+        listaCoisas['frutas'][0] = 'Banana'
+        listaCoisas['frutas'][1] = 'Manga'
+        listaCoisas['frutas'][2] = "Limão"
+
+        listaCoisas['pessoas'] = []
+        listaCoisas['pessoas'][0] = 'José'
+        listaCoisas['pessoas'][1] = 'Maria'
+        listaCoisas['pessoas'][2] = 'João'
+
+
+
+        console.log(listaCoisas)
+
+        // Incluir elementos no final do array
+        listaCoisas['frutas'].push('Maçã')
+        listaCoisas['frutas'].push('Laranja')
+
+        // Incluir elementos no início do array
+        listaCoisas['frutas'].unshift('Kiwi')
+        listaCoisas['frutas'].unshift('Cocaina')
+
+        // Exluir elemento no final do array
+        listaCoisas['frutas'].pop()
+
+        //Excluir elemento no início do array
+        listaCoisas['frutas'].shift()
+
+        
+
+    </script>
+</body>
+</html>
