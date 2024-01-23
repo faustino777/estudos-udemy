@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="text1">
+    <button onclick="add()">Adicionar</button>
+    <button onclick="ord()">Odernar</button>
+
+
+
+    <script>
+        var objects = ['Cadeira', 'Impressora', 'Garfo']
+
+        function add() {
+            
+            var value = document.getElementById('text1').value
+            if (value === '') {
+                alert('Informe um valor válido.')
+            } else if (objects.includes(value)) {
+                alert('Objeto já adicionado.')
+            } else {
+                objects.push(value)
+                document.getElementById('text1').value = ''
+                console.log(objects)
+            }
+        } 
+
+        function ord() {
+            var ord = objects.sort()
+            console.log(ord)
+        }
+    </script>
+</body>
+</html>
